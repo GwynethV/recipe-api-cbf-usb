@@ -3,10 +3,11 @@ package com.example.recipeapi.service;
 import com.example.recipeapi.entity.Recipe;
 import com.example.recipeapi.repository.RecipeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 
 import java.util.List;
-
+@Service
 public class RecipeService {
     @Autowired
             private RecipeRepository repository;

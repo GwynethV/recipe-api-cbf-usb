@@ -1,7 +1,11 @@
 package com.example.recipeapi.entity;
 
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import lombok.Data;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
@@ -16,7 +20,7 @@ import lombok.NoArgsConstructor;
 
 public class Recipe {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue
     private Integer id;
     private String name;
     private String ingredients;
@@ -26,4 +30,3 @@ public class Recipe {
 
 
 
-}

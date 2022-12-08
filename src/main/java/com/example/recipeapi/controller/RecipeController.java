@@ -4,15 +4,12 @@ package com.example.recipeapi.controller;
 import com.example.recipeapi.entity.Recipe;
 import com.example.recipeapi.service.RecipeService;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//
-@RestController
 
+@RestController
 public class RecipeController {
     @Autowired
     private RecipeService service;
